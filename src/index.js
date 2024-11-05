@@ -11,12 +11,12 @@ const MAIN_FRAME_TYPE = 'main_frame';
 /**
  * Possible errors that can occur due to DNS blocking.
  */
-const POSSIBLE_ERRORS = [
+const POSSIBLE_ERRORS = new Set([
     'net::ERR_CONNECTION_REFUSED',
     'net::ERR_NAME_NOT_RESOLVED',
     'net::ERR_CONNECTION_RESET',
     'net::ERR_ADDRESS_INVALID',
-];
+]);
 
 /**
  * Path to the blocked page.
@@ -165,7 +165,7 @@ const updateBlockedPage = async (tabId, hostname, parsedExtraData) => {
  */
 chrome.webRequest.onErrorOccurred.addListener(
     async (details) => {
-        if (details.type === MAIN_FRAME_TYPE && POSSIBLE_ERRORS.includes(details.error)) {
+        if (details.type === MAIN_FRAME_TYPE && POSSIBLE_ERRORS.has(details.error)) {
             const hostname = getHostname(details.url);
             if (!hostname) {
                 console.error(`Cannot get hostname from the URL: ${details.url}`);
