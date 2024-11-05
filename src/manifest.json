@@ -1,0 +1,41 @@
+{
+    "name": "AdGuard DNS SDE Demo",
+    "description": "This extension demonstrates how Structured DNS errors can work if supported natively by browsers.",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "author": "Adguard Software Ltd",
+    "background": {
+        "service_worker": "index.js"
+    },
+    "permissions": [
+        "webRequest",
+        "tabs"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "icons": {
+        "16": "assets/icon-16.png",
+        "128": "assets/icon-128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "assets/icon-16.png",
+            "128": "assets/icon-128.png"
+        }
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "pages/blocked.html"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "options_ui": {
+        "page": "pages/options.html",
+        "open_in_tab": false
+    }
+}

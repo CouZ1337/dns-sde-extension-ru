@@ -1,0 +1,15 @@
+{
+    "name": "ag-dns-sde-demo",
+    "description": "A simple DNS server for Agama SDE",
+    "version": "0.1.0",
+    "license": "GPL-3.0",
+    "scripts": {
+        "lint": "eslint --cache --max-warnings=0 ."
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.13.0",
+        "@stylistic/eslint-plugin-js": "^2.10.0",
+        "eslint": "^9.13.0",
+        "globals": "^15.11.0"
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <p>
+        This extension demonstrates how Structured DNS errors can work if supported natively by browsers.
+    </p>
+
+    <p>
+        You should first configure your browser to use AdGuard DNS:
+    </p>
+
+    <ol>
+        <li>Open Security settings in a new tab: <b>chrome://settings/security</b></li>
+        <li>Enable <b>Use secure DNS</b></li>
+        <li>In <b>Select DNS provider</b> choose <b>Add custom DNS service provider</b></li>
+        <li>Enter <b>https://dns.adguard-dns.com/dns-query</b></li>
+    </ol>
+
+    <p>
+        Now every time you try to open a website blocked by AdGuard DNS, the extension will detect that and show you a page indicating that the page was blocked by DNS.
+
+        To see an example try visiting <a href="https://ad.doubleclick.net/" target="_blank">ad.doubleclick.net</a>.
+    </p>
+
+</body>
+</html>
