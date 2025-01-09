@@ -1,7 +1,7 @@
 {
     "name": "ag-dns-sde-demo",
     "description": "A simple DNS server for Agama SDE",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "GPL-3.0",
     "scripts": {
         "lint": "eslint --cache --max-warnings=0 ."

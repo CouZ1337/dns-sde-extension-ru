@@ -20,6 +20,4 @@ with detailed information about the block.
 
 ## Permissions required
 
-- `webRequest` - necessary for detecting tab loading errors;
-- `tabs` - required for updating the tab and displaying the reason of the error
-  if tab loading fails due to AdGuard DNS blocking.
+- `webRequest` - necessary for detecting tab loading errors.
