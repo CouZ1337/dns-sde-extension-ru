@@ -1,23 +1,22 @@
-# AdGuard DNS SDE Demo Extension
+# AdGuard DNS SDE Демо Расширение
 
-This browser extension demonstrates how Structured DNS errors can work if supported natively by browsers.
-It listens for web requests and identifies loading errors on main frames.
-When an error is detected, it queries the AdGuard DNS DoH (DNS-over-HTTPS) service
-with structured DNS errors enabled to check if the page was blocked.
+Это браузерное расширение демонстрирует, как могли работать ошибки Structured DNS, если бы они поддерживались браузерами изначально.
+Оно прослушивает веб-запросы и идентифицирует ошибки загрузки на основных фреймах.
+При обнаружении ошибки оно запрашивает службу AdGuard DNS DoH (DNS-over-HTTPS)
+с включенными структурированными ошибками DNS, чтобы проверить, была ли страница заблокирована.
 
-If AdGuard DNS has blocked the page, the extension displays a custom block page
-with detailed information about the block.
+Если AdGuard DNS все-таки заблокировал страницу, расширение показывает специальную страницу с детальной информацией о блокировке.
 
-## How to use
+## Использование
 
-1. Go to `chrome://extensions/`.
-1. Enable developer mode.
-1. Install the extension from `src` directory by clicking `Load unpacked`.
-1. The extension options page will open.
-1. Set the AdGuard DNS custom server due to the instructions on the options page.
+1. Перейдите в `chrome://extensions/`.
+1. Включите режим разработчика.
+1. Установите Расширение из папки `src` нажатием на `Load unpacked (Загрузить распакованным)`.
+1. Откроется окно с настройками расширения.
+1. Настройте пользовательский сервер AdGuard DNS в соответствии с инструкциями на странице настроек.
 
-> **Note:** No other DNS should be set on the system level or in your network settings.
+> **Note:** Никакие другие DNS не должны быть установлены на системном уровне или в настройках вашей сети.
 
-## Permissions required
+## Требуемые разрешения
 
-- `webRequest` - necessary for detecting tab loading errors.
+- `webRequest` - необходимо для обнаружения ошибок загрузки вкладок.
