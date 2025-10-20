@@ -1,6 +1,6 @@
 {
-    "name": "AdGuard DNS SDE Demo",
-    "description": "This extension demonstrates how Structured DNS errors can work if supported natively by browsers.",
+    "name": "AdGuard DNS SDE Demo (RU)",
+    "description": "Неоффициальный перевод. Это расширение демонстрирует, как могли работать ошибки Structured DNS, если бы они поддерживались браузерами изначально.",
     "version": "0.1.1",
     "manifest_version": 3,
     "author": "Adguard Software Ltd",
